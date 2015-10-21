@@ -1,0 +1,217 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    height: 100%; 
+
+    margin-top: 23px;
+    margin-bottom: 0px;
+    background: none;
+}*
+
+body {	
+
+}
+
+.full {
+//    background: url( '../img/background.jpg' )  no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.vertical-offset-100 {
+    padding-top: 100px;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+.panel {
+    margin-bottom: 2px;
+    margin-top: 70px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+
+.form-hid{
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+
+/********************Date Pickers**************************/
+.date-picker,
+.date-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    color: rgb(75, 77, 78);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.date-container {
+    padding: 0px 40px;   
+}
+
+.date-picker h2, .date-picker h4 {
+    margin-top: 3px;
+    margin-bottom: 3x;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+
+}
+
+.date-container{
+    text-align: center;
+}
+.date-picker span.fa {
+    position: absolute;
+    cursor: pointer;
+}
+.date-picker span.fa[data-method="subtract"] {
+    left: 10px;
+}
+.date-picker span.fa[data-method="add"] {
+    right: 10px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1010px) {
+    .date-picker h2{
+        font-size: 1.5em; 
+        font-weight: 400;  
+    }    
+    .date-picker h4 {
+        font-size: 1.1em;
+
+    }  
+    .date-picker span.fa {
+        font-size: 3em;
+    } 
+}
+
+
+/*************************CheckBoxes***********************/
+.checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+
+
+/*******************Maps**************************/
+.google-maps{position: relative;padding-bottom:2%; overflow: hidden;}
+.google-maps iframe{ position: absolute; top: 0;left: 0; }  //width: 100% !important;height: 100% !important; 
+
+#floating-panel {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+
+ 
+   html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            #map {
+                margin-top: 70px;
+                width: 820px;
+                height: 555px;
+
+            }
